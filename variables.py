@@ -27,3 +27,9 @@ print(result2)
 print(result3)
 print(result4)
 print(result5)
+
+
+#loop with range , we will type a Hello pythone with for range
+for i in range(10):
+    print("Hello Python ")
+

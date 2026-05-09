@@ -33,3 +33,5 @@ print(result5)
 for i in range(10):
     print("Hello Python ")
 
+nama= input("enter your name here ")
+print("Hello ",name ,"Welcome")

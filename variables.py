@@ -35,3 +35,15 @@ for i in range(10):
 
 nama= input("enter your name here ")
 print("Hello ",name ,"Welcome")
+
+x=24
+y=20
+my_list=[10.20,30,40,50]
+if(x not in my_list):
+    print("X is not present in given list")
+else:
+    print("X is present in given list")
+    if(y in my_list):
+        print("Y is present in given list ")
+else:
+print("Y is Not present in give list ")        

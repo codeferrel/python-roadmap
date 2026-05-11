@@ -49,3 +49,8 @@ else:
 
 else:
 print(" y is Not present in give list ")        
+
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)

@@ -9,9 +9,8 @@ if age >= 60:
 else:
     print("Not eligible for a senior")
 
-    number = 2
 
-
+number=2
 match number:
     case 1:
         print("One")
@@ -22,3 +21,7 @@ match number:
 
 
   
+for i in range(1, 5):
+    for j in range(i):
+        print(i, end=' ')
+    print()

@@ -1,0 +1,10 @@
+age = 70
+is_member = True # Saya asumsikan ini maksudnya is_member (bukan is_number)
+
+if age >= 60:
+    if is_member:
+        print("30% Senior discount")
+    else:
+        print("20% senior discount")
+else:
+    print("Not eligible for a senior")

@@ -1,5 +1,4 @@
-def myFun(x, y=50):
-    print("x: ", x)
-    print("y: ", y)
+def sapa_user(nama):
 
-myFun(10)
+    print(f"Hallo {nama},selamat belajar python ")
+sapa_user("Bro")

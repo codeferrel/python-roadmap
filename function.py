@@ -13,3 +13,9 @@ def cek_diskon(total_belanja):
 # Menggunakan hasil fungsi untuk perhitungan lain
 harga_akhir = cek_diskon(150000)
 print(f"Total yang harus dibayar: Rp{harga_akhir}")
+
+
+def hey(mr):
+    print(f"Hallo {mr},Welcome to python ")
+
+hey("Noe ")

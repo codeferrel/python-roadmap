@@ -23,9 +23,9 @@ def cetak_nota_digital(nama_toko: str, *items: str, **informasi: Any) -> None:
 
 # Pemanggilan fungsi
 cetak_nota_digital(
-    "Toko Maju Jaya", 
+    "Toko Python", 
     "laptop", "mouse", "keyboard", "monitor ultra-wide",
-    alamat_tujuan="Jakarta Selatan", 
+    alamat_tujuan="Jogja", 
     jasa_kurir="Sicepat Express", 
     estimasi_tiba="Esok Hari"
 )

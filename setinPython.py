@@ -8,3 +8,12 @@ print(bar)
 print(baz)
 
 
+	
+foo = ["Belajar", "Python", "di", "Duniailkom"]
+print(type(foo))
+ 
+foo = ("Belajar", "Python", "di", "Duniailkom")
+print(type(foo))
+ 
+foo = {"Belajar", "Python", "di", "Duniailkom"}
+print(type(foo))

@@ -9,7 +9,7 @@ def Main():
         me = MyClass() 
 
         # Accessing the attributes of MyClass
-        # using the dot(.) operator   
+          
         me.number = 1337    
         me.name = "Harssh"
 

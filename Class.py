@@ -1,22 +1,28 @@
-class MyClass:  
-        # assign the values to the MyClass attributes
-        number = 0       
-        name = "noname"
+# A Python program to demonstrate working of inheritance
+class Pet:
+        #__init__ is an constructor in Python
+        def __init__(self, name, age):     
+                self.name = name
+                self.age = age
+
+# Class Cat inheriting from the class Pet
+class Cat(Pet):         
+        def __init__(self, name, age):
+                # calling the super-class function __init__ 
+                # using the super() function
+                super().__init__(name, age) 
 
 def Main():
-        # Creating an object of the MyClass. 
-        # Here, 'me' is the object
-        me = MyClass() 
+        thePet = Pet("Pet", 1)
+        jess = Cat("Jess", 3)
+        
+        # isinstance() function to check whether a class is 
+        # inherited from another class
+        print("Is jess a cat? " +str(isinstance(jess, Cat)))
+        print("Is jess a pet? " +str(isinstance(jess, Pet)))
+        print("Is the pet a cat? "+str(isinstance(thePet, Cat)))
+        print("Is thePet a Pet? " +str(isinstance(thePet, Pet)))
+        print(jess.name)
 
-        # Accessing the attributes of MyClass
-          
-        me.number = 1337    
-        me.name = "Harssh"
-
-        # str is an build-in function that 
-        # creates an string
-        print(me.name + " " + str(me.number))
-   
-# telling python that there is main in the program.
-if __name__=='__main__':  
+if __name__=='__main__':
         Main()

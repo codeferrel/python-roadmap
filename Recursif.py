@@ -1,4 +1,5 @@
 def tail_fact(n, acc=1):
+    #def tail_fact(n, acc=1): - Defines a tail-recursive factorial function with an accumulator acc to store intermediate results.
     if n == 0:
         return acc
     else:

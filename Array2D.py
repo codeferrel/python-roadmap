@@ -14,6 +14,7 @@ print()
 print("Elemen baris 0 kolom 0 :", array_input[0][0])
 print("Elemen baris 0 kolom 1 :", array_input[0][1])
 print("Elemen baris 1 kolom 2 :", array_input[1][2])
+print("Elemen baris 1 kolom 1 :", array_input[1][1])
 
 print()
 

@@ -39,6 +39,7 @@ print()
 # Mengubah nilai array
 array_input[0][1] = 100
 array_input[0][2] =40
+array_input[1][1] =17
 
 print("Array setelah diubah :")
 print(array_input)

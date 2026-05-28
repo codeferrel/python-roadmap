@@ -40,6 +40,7 @@ print()
 array_input[0][1] = 100
 array_input[0][2] =40
 array_input[1][1] =17
-
+array_input[1][2] =10
+array_input[1][3] =11
 print("Array setelah diubah :")
 print(array_input)

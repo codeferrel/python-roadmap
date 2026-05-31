@@ -11,3 +11,9 @@ print(list)
 thislist=["book ","Pen ", "wallet "]
 thislist.append("Fan")
 print(thislist)
+
+
+#remove lsit item -->remove()
+item= ["Item1 ","Item2 ", "Item3 "]
+item.remove("Item3 ")
+print(item)

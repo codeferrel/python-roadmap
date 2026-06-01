@@ -14,6 +14,6 @@ print(thislist)
 
 
 #remove lsit item -->remove()
-item= ["Item1 ","Item2 ", "Item3 "]
+item= ["Item1 ","Item2 ", "Item3 ", "item4"]
 item.remove("Item3 ")
 print(item)

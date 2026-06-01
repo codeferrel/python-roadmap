@@ -7,7 +7,7 @@ if x > 10 :
     else:
         print("not above 20")
 
-    #pass statment    
+    #pass statment  ->norhing happend  
 value=50
 
 if value < 0:

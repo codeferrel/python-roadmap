@@ -30,3 +30,11 @@ list2 = [1, 2, 3]
 
 list3 = list1 + list2
 print(list3)
+
+
+##update tuples
+x=("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x=tuple(x)
+print(x)

@@ -23,3 +23,10 @@ print(newlist)
 thislist = [100, 50, 65, 82, 23]
 thislist.sort()
 print(thislist)
+
+#join two list
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)

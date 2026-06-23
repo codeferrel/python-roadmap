@@ -24,3 +24,12 @@ thisdict = {
 }
 mydict = dict(thisdict)
 print(mydict) 
+
+thisdict={
+    "brand":"ford",
+    "model":"mustang",
+    "year ":2017
+}
+
+thisdict['year ']=2020
+print(thisdict)

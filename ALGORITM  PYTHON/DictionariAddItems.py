@@ -25,6 +25,7 @@ thisdict = {
 mydict = dict(thisdict)
 print(mydict) 
 
+#change values
 thisdict={
     "brand":"ford",
     "model":"mustang",
@@ -33,3 +34,21 @@ thisdict={
 
 thisdict['year ']=2020
 print(thisdict)
+
+
+#Nested dictionary ,,,A dictionary can contain dictionaries, this is called nested dictionaries.
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+} 
+print(myfamily)

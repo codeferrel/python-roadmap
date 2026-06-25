@@ -17,3 +17,10 @@ elif score >= 70:
   print("Grade: C")
 elif score >= 60:
   print("Grade: D")
+
+
+#Python Shorthand If
+a = 10
+b = 20
+bigger = a if a > b else b
+print("Bigger is", bigger)

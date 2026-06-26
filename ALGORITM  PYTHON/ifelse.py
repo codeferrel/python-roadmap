@@ -24,3 +24,13 @@ a = 10
 b = 20
 bigger = a if a > b else b
 print("Bigger is", bigger)
+
+#Nested If Statements
+x = 41
+
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")

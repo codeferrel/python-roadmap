@@ -19,4 +19,4 @@ while True:
     nomor_barang += 1 
 print("-" * 30)
 print(f"Total yang harus dibayar: Rp {total_belanja:,}")
-print("Terima kasih telah berbelanja!")
+print("Terima kasih telah berbelanja!") 

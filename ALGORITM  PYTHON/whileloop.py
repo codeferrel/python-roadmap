@@ -1,6 +1,4 @@
-i = 1
-while i < 6:
+i = 3
+while i < 100:
   print(i)
-  if i == 3:
-    break
-  i += 1 
+  i = i + 3

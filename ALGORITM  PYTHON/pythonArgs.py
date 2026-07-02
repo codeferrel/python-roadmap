@@ -11,3 +11,15 @@ def my_function(*args):
   print("All arguments:", args)
 
 my_function("Emil", "Tobias", "Linus") 
+
+
+
+#Combining *args and **kwargs
+
+def my_function(title, *args, **kwargs):
+  print("title" , title)
+  print("position arguments ",args)
+  print("Keyboart argument ", kwargs)
+
+
+  my_function("User info ", "CodeF ","Tobias ", age=25 , city ="Oslo")

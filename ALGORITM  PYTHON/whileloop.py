@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 # Print numbers until the user enters 0
 number = int(input('Enter a number: '))
 
@@ -15,3 +9,10 @@ while number != 0:
 
 print('The end.')
 
+
+i=int(input("Enter any number below 5 :"))
+while i<=5:
+    print(i)
+    i=i+1
+
+print("the end")1

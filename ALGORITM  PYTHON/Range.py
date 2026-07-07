@@ -9,3 +9,8 @@ print(list(x))
 for i in range(10):
   print(i)
 
+#
+r = range(0, 10, 2)
+print(list(r))
+print(6 in r)
+print(7 in r)

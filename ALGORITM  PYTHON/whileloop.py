@@ -15,4 +15,6 @@ while i<=5:
     print(i)
     i=i+1
 
-print("the end")1
+print("the end")
+for x in range(2, 6):
+  print(x)

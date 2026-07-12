@@ -1,4 +1,4 @@
-#Baaics For loop 
+#Basic For loop 
 for x in range(6):
   print(x)
 else:

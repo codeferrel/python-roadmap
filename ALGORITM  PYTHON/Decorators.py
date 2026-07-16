@@ -19,22 +19,21 @@ def otherfunction():
 
 print(myfunction())
 print(otherfunction())
-
-
+print("\n")
 ###############################
 
-# def changecase(func):
-#     def myinner():
-#         return func().upper()
-#     return myinner
+def changecase(func):
+    def myinner():
+        return func().upper()
+    return myinner
 
-# @changecase
-# def func2():
-#     return "HELLO 1"
+@changecase
+def func2():
+    return "HELLO 1"
 
-# @changecase
-# def func3():
-#     return "HELLO 2"
+@changecase
+def func3():
+    return "HELLO 2"
 
-# print(func2())
-# print(func3())
+print(func2())
+print(func3())

@@ -32,3 +32,4 @@ arr2=np.array([3,4,5])
 arr=np.hstack((arr1,arr2))
 
 print(arr)
+

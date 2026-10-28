@@ -14,9 +14,8 @@ plt.scatter(x, y)
 plt.show()
 
 
-Normal Data Distribution
-
-In the previous chapter we learned how to create a completely random array, of a given size, and between two given values.
+# Normal Data Distribution
+# In the previous chapter we learned how to create a completely random array, of a given size, and between two given values.
 import numpy
 import matplotlib.pyplot as plt
 

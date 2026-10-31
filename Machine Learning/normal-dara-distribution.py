@@ -16,8 +16,7 @@ plt.show()
 
 # Linear Regression
 # Linear regression uses the relationship between the data-points to draw a straight line through all them.
-
-This line can be used to predict future values.
+# This line can be used to predict future values.
 import matplotlib.pyplot as plt
 
 x = [5,7,8,7,2,17,2,9,4,11,12,9,6]

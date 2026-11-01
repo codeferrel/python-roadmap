@@ -1,2 +1,10 @@
-tup2 = (1, 2, 3, 4, 5, 6, 7)
-# print(tup2[1:5])  # Output: (2, 3, 4, 5)
+for i in range(1, 5):
+    for j in range(i):
+        print(i, end=' ')
+    print()
+    def sapa_teman(nama):
+  print("Hai" ,sapa_teman) 
+ 
+sapa_teman("Lisa")
+sapa_teman("Sari")
+sapa_teman("Putri")

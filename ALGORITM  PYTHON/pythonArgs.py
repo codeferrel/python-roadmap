@@ -22,4 +22,4 @@ def my_function(title, *args, **kwargs):
   print("Keyboart argument ", kwargs)
 
 
-  my_function("User info ", "CodeF ","Tobias ", age=25 , city ="Oslo")
+  my_function("User info ", "CodeF ","0xnoel ", age=25 , city ="DILI")

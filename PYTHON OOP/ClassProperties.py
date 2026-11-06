@@ -1,5 +1,4 @@
 # Properties are variables that belong to a class. They store data for each object created from the class.
-
 # Create a class with properties:
 class Person:
   def __init__(self, name, age):

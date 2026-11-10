@@ -5,7 +5,7 @@ import string
 import threading
 import time
 
-# ── Karakter set ──────────────────────────────────────────────
+# Karakter
 CHARSETS = {
     "Angka (0-9)":       string.digits,
     "Huruf kecil (a-z)": string.ascii_lowercase,
@@ -14,7 +14,7 @@ CHARSETS = {
     "Semua karakter":    string.printable[:94],
 }
 
-# ── Tema warna ────────────────────────────────────────────────
+
 BG      = "#0f1117"
 SURFACE = "#1a1d27"
 CARD    = "#22253a"
@@ -62,11 +62,10 @@ class PasswordCrackerApp(tk.Tk):
             self._fullscreen = False
             self.attributes("-fullscreen", False)
 
-    # ══════════════════════════════════════════════════════════
+  
     #  UI
-    # ══════════════════════════════════════════════════════════
     def _build_ui(self):
-        # ── Canvas + Scrollbar agar konten bisa di-scroll ────
+ 
         self._canvas = tk.Canvas(self, bg=BG, highlightthickness=0)
         self._scrollbar = ttk.Scrollbar(self, orient="vertical",
                                         command=self._canvas.yview)
@@ -78,12 +77,12 @@ class PasswordCrackerApp(tk.Tk):
         self._win_id = self._canvas.create_window((0, 0), window=outer,
                                                   anchor="nw")
 
-        # Update scroll region setiap outer berubah ukuran
+       
         outer.bind("<Configure>", self._on_frame_configure)
         self._canvas.bind("<Configure>", self._on_canvas_configure)
 
         # Scroll mouse wheel
-        self.bind_all("<MouseWheel>",      self._on_mousewheel)        # Windows
+        self.bind_all("<MouseWheel>",      self._on_mousewheel)      
         self.bind_all("<Button-4>",        lambda e: self._canvas.yview_scroll(-1, "units"))  # Linux
         self.bind_all("<Button-5>",        lambda e: self._canvas.yview_scroll(1,  "units"))  # Linux
 
@@ -92,7 +91,7 @@ class PasswordCrackerApp(tk.Tk):
         tk.Label(outer, text="Password Cracker Visualizer ",
                  font=("Courier New", 11), fg=MUTED, bg=BG).pack(anchor="w", pady=(0, 16))
 
-        # ── Baris atas: input | stats ─────────────────────────
+        #  input stats
         row1 = tk.Frame(outer, bg=BG)
         row1.pack(fill="x")
 
@@ -101,7 +100,7 @@ class PasswordCrackerApp(tk.Tk):
         right = self._card(row1)
         right.pack(side="left", fill="both", expand=True, padx=(8, 0))
 
-        # Panel kiri: input
+        #  input
         self._section(left, "Target Password")
         self.var_target = tk.StringVar(value="ab3")
         self._entry(left, self.var_target)
@@ -156,7 +155,7 @@ class PasswordCrackerApp(tk.Tk):
                                    cursor="hand2", padx=14, pady=8)
         self.btn_reset.pack(side="left", padx=(10, 0))
 
-        # Panel kanan: stats
+        # stats
         self._section(right, "Percobaan Saat Ini")
         self.lbl_current = tk.Label(right, text="—",
                                     font=("Courier New", 26, "bold"),
@@ -186,9 +185,9 @@ class PasswordCrackerApp(tk.Tk):
                                    font=("Courier New", 10), fg=MUTED, bg=CARD)
         self.lbl_status.pack(anchor="w")
 
-        # ══════════════════════════════════════════════════════
-        #  VISUALISASI KARAKTER — fitur baru
-        # ══════════════════════════════════════════════════════
+    
+        #  new features
+   
         vis_frame = self._card(outer, pady=16)
         vis_frame.pack(fill="x", pady=(14, 0))
 
@@ -200,7 +199,7 @@ class PasswordCrackerApp(tk.Tk):
         self.char_frame = tk.Frame(vis_frame, bg=CARD)
         self.char_frame.pack(anchor="w")
 
-        # Baris perbandingan
+        
         cmp1 = tk.Frame(vis_frame, bg=CARD)
         cmp1.pack(anchor="w", pady=(12, 0), fill="x")
         tk.Label(cmp1, text="Target  :", font=("Courier New", 11), fg=MUTED, bg=CARD).pack(side="left")
@@ -219,7 +218,7 @@ class PasswordCrackerApp(tk.Tk):
                                       highlightthickness=0)
         self.match_canvas.pack(anchor="w", pady=(8, 0), fill="x")
 
-        # ── Log ───────────────────────────────────────────────
+        #  Log 
         log_frame = self._card(outer, pady=14)
         log_frame.pack(fill="x", pady=(12, 0))
         self._section(log_frame, "Log Percobaan")
@@ -233,7 +232,7 @@ class PasswordCrackerApp(tk.Tk):
         self.log_box.tag_config("info",  foreground=ACCENT)
         self.log_box.tag_config("error", foreground=DANGER)
 
-        # ── Hasil ─────────────────────────────────────────────
+        # Result
         res_frame = self._card(outer, pady=14)
         res_frame.pack(fill="x", pady=(12, 0))
         self._section(res_frame, "Hasil")
@@ -242,7 +241,7 @@ class PasswordCrackerApp(tk.Tk):
                                    anchor="w", wraplength=680, justify="left")
         self.lbl_result.pack(anchor="w", pady=(4, 0))
 
-    # ── Scroll helpers ────────────────────────────────────────
+    #  Scroll helpers 
     def _on_frame_configure(self, event=None):
         self._canvas.configure(scrollregion=self._canvas.bbox("all"))
 
@@ -252,7 +251,7 @@ class PasswordCrackerApp(tk.Tk):
     def _on_mousewheel(self, event):
         self._canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
 
-    # ── Helper ────────────────────────────────────────────────
+    # Helper 
     def _card(self, parent, pady=18):
         return tk.Frame(parent, bg=CARD, padx=18, pady=pady,
                         highlightthickness=1, highlightbackground=BORDER)
@@ -285,9 +284,8 @@ class PasswordCrackerApp(tk.Tk):
             self._delay = 0.001 * (1.5 ** (v / 10))
             self.lbl_spd.config(text=f"{self._delay*1000:.0f} ms/try")
 
-    # ══════════════════════════════════════════════════════════
-    #  Visualisasi kotak karakter
-    # ══════════════════════════════════════════════════════════
+    
+   
     def _build_char_boxes(self, n):
         for w in self.char_frame.winfo_children():
             w.destroy()
@@ -339,9 +337,8 @@ class PasswordCrackerApp(tk.Tk):
             self.match_canvas.create_rectangle(0, 0, int(w * pct), 8,
                                                fill=color, outline="")
 
-    # ══════════════════════════════════════════════════════════
-    #  Kontrol
-    # ══════════════════════════════════════════════════════════
+   
+    #  control
     def _toggle(self):
         if self._running:
             self._running = False
@@ -403,9 +400,8 @@ class PasswordCrackerApp(tk.Tk):
             daemon=True)
         self._thread.start()
 
-    # ══════════════════════════════════════════════════════════
+ 
     #  Worker thread
-    # ══════════════════════════════════════════════════════════
     def _crack_worker(self, target, charset, maxlen):
         found    = False
         count    = 0

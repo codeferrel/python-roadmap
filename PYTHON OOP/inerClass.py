@@ -14,7 +14,6 @@ class Outer:
 outer = Outer()
 print(outer.name) 
 
-#######################
 # Access the inner class and create an object:
 class Outer:
   def __init__(self):
@@ -32,7 +31,7 @@ inner = outer.Inner()
 inner.display() 
 
 
-###################################
+
 class Car:
   def __init__(self, brand, model):
     self.brand = brand
@@ -62,7 +61,7 @@ car.drive()
 car.engine.start()
 car.drive()
 
-#################################
+
 #Create multiple inner classes:
 class Computer:
   def __init__(self):

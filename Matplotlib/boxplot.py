@@ -1,3 +1,5 @@
+# Box plot is a simple graph that shows how data is spread out. It displays the minimum, maximum, median and quartiles and also helps to spot outliers easily.
+
 import matplotlib.pyplot as plt
 
 data = [ [10, 12, 14, 15, 18, 20, 22],

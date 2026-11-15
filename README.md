@@ -17,7 +17,7 @@ To run the code examples locally on your machine:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com
+     git clone https://github.com/codeferrel/python-roadmap.git
    ```
 2. **Navigate to the project directory**
    ```bash

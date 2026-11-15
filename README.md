@@ -11,7 +11,7 @@ Here is an overview of the modules and topics covered in this repository:
 * **Matplotlib`** – Data visualization techniques, plotting graphs, and creating charts (such as bar charts).
 * **Machine Learning`** – Introductory Machine Learning concepts and predictive modeling (such as multiple regression).
 
-## 🚀 Getting Started
+## Getting Started
 
 To run the code examples locally on your machine:
 

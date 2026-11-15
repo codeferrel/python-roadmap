@@ -1,8 +1,8 @@
-# 🐍 Python Roadmap: From Fundamentals to Machine Learning
+# Python Roadmap: From Fundamentals to Machine Learning
 
 A comprehensive Python learning repository containing theory, personal notes, and practical code examples. This repository covers core Python programming concepts, algorithms, data analysis libraries, and foundational Machine Learning models.
 
-## 📂 Repository Structure
+##Repository Structure
 Here is an overview of the modules and topics covered in this repository:
 
 * **PYTHON OOP`** – Object-Oriented Programming concepts in Python (Classes, Objects, Inheritance, etc.).
@@ -29,14 +29,14 @@ To run the code examples locally on your machine:
    ```
 4. **Run any script** inside the specific topic folders using Python or Jupyter Notebook.
 
-## 🛠️ Technologies & Libraries Used
+## Technologies & Libraries Used
 
 * **Language:** Python 3.x
 * **Data Manipulation & Math:** NumPy
 * **Data Visualization:** Matplotlib
 * **Machine Learning:** Scikit-Learn
 
-## 🤝 Contributors
+## Contributors
 
 * [@codeferrel](https://github.com) (Noe Ferreira)
 * [@codeSec99](https://github.com)
